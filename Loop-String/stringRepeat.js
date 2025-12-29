@@ -4,6 +4,11 @@
 
 function repeatStr (n, s) {
   //code here
+  let hasil = "";
+  for (let i = 1; i <= n; i++ ) {
+    hasil = hasil + s;
+  }
+  return hasil;
 }
 
 console.log(repeatStr(3, "*")); //***
