@@ -2,9 +2,14 @@
 // Petunjuk: Gunakan logika 'ganjil-genap' dari
 // penjumlahan indeks baris (i) dan kolom (j).
 function papanCatur(num) {
-  let pattern = '';
-  // code here
-  return pattern;
+  let pattern = "";
+  for (let i = 0; i <= num; i++) {
+    for (let i = 0; i < num; i++) {
+      if (i % 2) pattern += " ";
+      else pattern += "#";
+    }
+    console.log(pattern);
+  }
 }
 
 // use case

@@ -3,8 +3,13 @@
 // patrick feeney => P.F
 //source: https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
 
-function abbrevName(name){
-  //code here
+function abbrevName(name) {
+  let result = "";
+  for (let i = 0; i < name.length; i++) {
+    if (/[A-Z]/.test(name[i])) result += name[i];
+    if (name[i] === " ") result += `.`;
+  }
+  return result;
 }
 
 console.log(abbrevName("Sam Harris")); //S.H
