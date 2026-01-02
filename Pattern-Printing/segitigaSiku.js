@@ -2,6 +2,12 @@
 function segitigaSiku(num) {
   let pattern = '';
   // code here
+  for (let i = 1; i <= num; i++) {
+    for (let j = 0; j < i; j++) {
+      pattern+="*";
+    }
+    pattern+="\n"
+  }
   return pattern;
 }
 

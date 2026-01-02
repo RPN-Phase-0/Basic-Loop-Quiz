@@ -4,6 +4,14 @@
 
 function findNeedle(haystack) {
   // your code here
+  let pocici = 0; 
+  for (let i = 0; i < haystack.length;i++) {
+    if (haystack[i] === 'needle') {
+      pocici+=i;
+      break;
+    }
+  }
+  return `found the needle at position ${pocici}`;
 }
 
 let haystack_1 = ['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false];

@@ -2,6 +2,22 @@
 function persegiBolong(num) {
   let pattern = '';
   // code here
+  for (let i = 1; i <= num;i++) {
+    if (i == 1 || i==num) {
+      for (let j = 1;j <= num;j++) {
+        pattern+="*";
+      }
+    } else {
+      for (let k = 1; k <= num;k++) {
+        if (k == 1 || k == num) {
+          pattern+="*";
+        } else {
+          pattern+=" ";
+        }
+      }
+    }
+    pattern+="\n"
+  }
   return pattern;
 }
 

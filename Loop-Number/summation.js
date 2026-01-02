@@ -5,6 +5,11 @@
 
 function summation (num) {
   // Code here
+  let hasil = 0;
+  for (let i = 0; i < num; i++) {
+    hasil += num - i;
+  }
+  return hasil;
 }
 
 console.log(summation(1)); //1
