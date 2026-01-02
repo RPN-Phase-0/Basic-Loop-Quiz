@@ -14,7 +14,8 @@ function papanCatur(num) {
         }
       }
     } else {
-      // harusnya gak error ya karena j dijalankan salah satu
+      // harusnya gak error, yaa karena j dijalankan salah satu
+      // gabut hehe
       for (let j = 1; j <= num; j++) {
         if (j % 2 == 1) {
           pattern+=" ";
