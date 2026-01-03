@@ -4,18 +4,43 @@
 
 function countSheeps(sheep) {
   // TODO
+  let sum = 0;
+  for (let i = 0; i < sheep.length; i++) {
+    if (sheep[i]) sum += 1;
+  }
+  return sum;
 }
 
-console.log(countSheeps([])) //0
-console.log(countSheeps([undefined])) //0
-console.log(countSheeps([null])) //0
-console.log(countSheeps([false])) //0
-console.log(countSheeps([true])) //1
-console.log(countSheeps(
-  [true,true,true,false,
-   true,true,true,true,
-   true,false,true,false,
-   true,false,false,true,
-   true,true,true,true,
-   false,false,true,true
-])) //17
+console.log(countSheeps([])); //0
+console.log(countSheeps([undefined])); //0
+console.log(countSheeps([null])); //0
+console.log(countSheeps([false])); //0
+console.log(countSheeps([true])); //1
+console.log(
+  countSheeps([
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+  ])
+); //17
