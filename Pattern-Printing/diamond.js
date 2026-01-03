@@ -1,26 +1,28 @@
 function berlian(num) {
   // code here
+  let pattern = "";
   for (let i = 1; i <= num; i++) {
-    let pattern = "";
+    let row = "";
 
     for (let j = 1; j <= num - i; j++) {
-      pattern += " ";
+      row += " ";
     }
     for (let k = 1; k <= 2 * i - 1; k++) {
-      pattern += "*";
+      row += "*";
     }
-    console.log(pattern);
+    pattern += row + "\n";
   }
   for (let i = num; i > 1; i--) {
-    let pattern = "";
+    let row = "";
     for (let j = 1; j <= num - (i - 1); j++) {
-      pattern += " ";
+      row += " ";
     }
     for (let k = 1; k <= 2 * (i - 1) - 1; k++) {
-      pattern += "*";
+      row += "*";
     }
-    console.log(pattern);
+    pattern += row + "\n";
   }
+  return pattern;
 }
 
 // use case

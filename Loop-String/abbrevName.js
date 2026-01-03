@@ -6,8 +6,10 @@
 function abbrevName(name) {
   let result = "";
   for (let i = 0; i < name.length; i++) {
-    if (/[A-Z]/.test(name[i])) result += name[i];
-    if (name[i] === " ") result += `.`;
+    if (name[i] === " ") result += ".";
+    if (i === 0 || name[i - 1] === " ") {
+      result += name[i];
+    }
   }
   return result;
 }
