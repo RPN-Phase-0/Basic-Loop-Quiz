@@ -1,8 +1,12 @@
 // Wajib menggunakan nested loop
 function persegi(num) {
-  let pattern = '';
-  // code here
-  return pattern;
+  for (let i = 1; i <= num; i++) {
+    let pattern = "";
+    for (let j = 1; j <= num; j++) {
+      pattern += "*";
+    }
+    console.log(pattern);
+  }
 }
 
 // use case

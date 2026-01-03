@@ -3,13 +3,21 @@
 // berada di diagonal utama (i === j) ATAU
 // diagonal terbalik (i + j === num - 1).
 function polaX(num) {
-  let pattern = '';
-  // code here
-  return pattern;
+  for (let i = 1; i <= num; i++) {
+    let pattern = "";
+    for (let j = 1; j <= num; j++) {
+      if (i === j || i + j === num + 1) {
+        pattern += "*";
+      } else {
+        pattern += " ";
+      }
+    }
+    console.log(pattern);
+  }
 }
 
 // use case
-console.log('\n--- Soal 11: Pola X ---');
+console.log("\n--- Soal 11: Pola X ---");
 console.log(polaX(5));
 /*
 expected result
