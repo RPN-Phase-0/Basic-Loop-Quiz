@@ -2,13 +2,18 @@
 //hanya mengulang string sebanyak n kali
 //source: https://www.codewars.com/kata/57a0e5c372292dd76d000d7e
 
-function repeatStr (n, s) {
+function repeatStr(n, s) {
   //code here
+  let result = n > 0 ? s : "";
+  for (let i = 1; i < n; i++) {
+    result += s;
+  }
+  return result;
 }
 
 console.log(repeatStr(3, "*")); //***
 console.log(repeatStr(5, "#")); //#####
-console.log(repeatStr(2, "ha ")); //ha ha 
+console.log(repeatStr(2, "ha ")); //ha ha
 console.log(repeatStr(0, "")); //
 console.log(repeatStr(0, "I")); //
 console.log(repeatStr(5, "")); //

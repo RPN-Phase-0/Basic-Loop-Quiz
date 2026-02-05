@@ -3,8 +3,13 @@
 //8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
 //source: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
 
-function summation (num) {
+function summation(num) {
   // Code here
+  let sum = 0;
+  for (let i = 1; i <= num; i++) {
+    sum += i;
+  }
+  return sum;
 }
 
 console.log(summation(1)); //1

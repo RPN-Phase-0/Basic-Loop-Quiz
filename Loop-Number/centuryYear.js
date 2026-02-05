@@ -5,8 +5,14 @@
 //source: https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097
 
 function century(year) {
-  // Finish this :)
-  return;
+  // const str = String(parseInt(year / 100));
+
+  let result = 0;
+  while (year >= 1) {
+    result += 1;
+    year -= 100;
+  }
+  return result;
 }
 
 console.log(century(1705)); //18
