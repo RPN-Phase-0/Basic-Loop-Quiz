@@ -4,6 +4,15 @@
 
 function findHighestInt(arr) {
   //your code here
+  let high = 0;
+  
+  //Loop
+  for(let i = 0; i <= arr.length; i++){
+    if(arr[i] > high){
+      high = arr[i];
+    }
+  }
+  return high;
   
 }
 

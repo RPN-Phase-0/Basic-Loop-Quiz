@@ -4,7 +4,15 @@
 
 function findSmallestInt(arr) {
   //your code here
-  
+  let kecil = 500;
+
+  // Loop
+  for(let i = 0; i <= arr.length; i++){
+    if(arr[i] < kecil){
+      kecil = arr[i];
+    }
+  }
+  return kecil;
 }
 
 console.log(findSmallestInt([78,56,232,12,8])); //8

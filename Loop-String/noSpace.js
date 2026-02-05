@@ -4,6 +4,12 @@
 
 function noSpace(x){
   //code here
+  let hasil = "";
+
+  for(let i = 0; i <= x.length; i++){
+    if(x[i] !==" ") hasil += x[i];
+  }
+  return hasil
 
 }
 

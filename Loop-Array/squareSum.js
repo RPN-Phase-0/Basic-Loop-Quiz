@@ -4,6 +4,12 @@
 
 function squareSum(numbers){
   //code here
+  let hasil = 0;
+  for(let i = 0; i < numbers.length; i++){
+    let angka = numbers[i] **2;
+    hasil = hasil + angka;
+  }
+  return hasil;
 }
 
 console.log(squareSum([1,2])); //5

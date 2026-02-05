@@ -4,6 +4,15 @@
 
 function positiveSum(arr) {
   //code here
+  let cum = 0;
+
+  //Looping
+  for(let i = 0; i <= arr.length; i++){
+    if(arr[i] > 0){
+      cum = cum + arr[i];
+    }
+  }
+  return cum;
 }
 
 console.log(positiveSum([1,2,3,4,5])) //15

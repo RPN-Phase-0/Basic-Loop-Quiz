@@ -4,7 +4,18 @@
 
 function countSheeps(sheep) {
   // TODO
+  let benar = 0;
+
+  //looping
+  for(let i=0; i < sheep.length; i++ ){
+    if(sheep[i] == true){
+      benar++;
+    } 
+  }
+  return benar;
 }
+
+
 
 console.log(countSheeps([])) //0
 console.log(countSheeps([undefined])) //0
@@ -17,5 +28,4 @@ console.log(countSheeps(
    true,false,true,false,
    true,false,false,true,
    true,true,true,true,
-   false,false,true,true
-])) //17
+   false,false,true,true])) //17
