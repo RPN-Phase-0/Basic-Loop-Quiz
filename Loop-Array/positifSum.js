@@ -4,6 +4,14 @@
 
 function positiveSum(arr) {
   //code here
+  hacil_akir = 0;
+  for (let pariabel = 0; pariabel < arr.length; pariabel++) {
+    // gabut guys :)
+    if (arr[pariabel] > 0) {
+      hacil_akir+=arr[pariabel];
+    }
+  }
+  return hacil_akir;
 }
 
 console.log(positiveSum([1,2,3,4,5])) //15

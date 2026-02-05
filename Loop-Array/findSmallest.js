@@ -4,6 +4,14 @@
 
 function findSmallestInt(arr) {
   //your code here
+  for (let pariabel1 = 0; pariabel1 < arr.length; pariabel1++) { //sorry bang gabut hehehe :)
+    for (let pariabel2 = 0; pariabel2 < arr.length -1; pariabel2++) {
+      if (arr[pariabel2] > arr[pariabel2 + 1]) {
+        [arr[pariabel2], arr[pariabel2 + 1]] = [arr[pariabel2 + 1], arr[pariabel2]];
+      }
+    }
+  }
+  return arr;
   
 }
 
