@@ -1,7 +1,13 @@
 // Pada quiz ini wajib menggunakan nested loop
 function segitigaSiku(num) {
-  let pattern = '';
+  let pattern = "";
   // code here
+  for (let i = 1; i <= num; i++) {
+    for (let j = 1; j <= i; j++) {
+      pattern += "*";
+    }
+    pattern += "\n";
+  }
   return pattern;
 }
 

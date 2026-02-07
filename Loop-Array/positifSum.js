@@ -4,9 +4,17 @@
 
 function positiveSum(arr) {
   //code here
+  let result = 0;
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      result += arr[i];
+    }
+  }
+
+  return result;
 }
 
-console.log(positiveSum([1,2,3,4,5])) //15
-console.log(positiveSum([1,-2,3,4,5])) //13
-console.log(positiveSum([])) //13
-console.log(positiveSum([-1,2,3,4,-5])) //9
+console.log(positiveSum([1, 2, 3, 4, 5])); //15
+console.log(positiveSum([1, -2, 3, 4, 5])); //13
+console.log(positiveSum([])); //13
+console.log(positiveSum([-1, 2, 3, 4, -5])); //9

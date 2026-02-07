@@ -4,11 +4,16 @@
 
 function findHighestInt(arr) {
   //your code here
-  
+  let highest = arr[0];
+  for (i = 0; i < arr.length; i++) {
+    arr[i] > highest ? (highest = arr[i]) : null;
+  }
+
+  return highest;
 }
 
-console.log(findHighestInt([78,56,232,12,8])); //8
-console.log(findHighestInt([78,56,232,12,18])); //12
-console.log(findHighestInt([78,56,232,412,228])); //56
-console.log(findHighestInt([78,56,232,12,0])); //0
-console.log(findHighestInt([1,56,232,12,8])); //1
+console.log(findHighestInt([78, 56, 232, 12, 8])); //8
+console.log(findHighestInt([78, 56, 232, 12, 18])); //12
+console.log(findHighestInt([78, 56, 232, 412, 228])); //56
+console.log(findHighestInt([78, 56, 232, 12, 0])); //0
+console.log(findHighestInt([1, 56, 232, 12, 8])); //1
