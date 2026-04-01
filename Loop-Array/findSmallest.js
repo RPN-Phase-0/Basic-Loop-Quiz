@@ -3,8 +3,16 @@
 //source: https://www.codewars.com/kata/55a2d7ebe362935a210000b2
 
 function findSmallestInt(arr) {
-  //your code here
-  
+  //your code here 
+  let smallest = arr[0];
+
+  for(let i = 1; i < arr.length; i++) {
+    if(smallest > arr[i]) {
+      smallest = arr[i];
+    }
+  }
+
+  return smallest;
 }
 
 console.log(findSmallestInt([78,56,232,12,8])); //8
