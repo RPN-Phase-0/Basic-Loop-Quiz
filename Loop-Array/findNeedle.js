@@ -4,6 +4,13 @@
 
 function findNeedle(haystack) {
   // your code here
+  let hasil = 0;
+  for (let i = 0; i < haystack.length; i++) {
+    if(haystack[i] === 'needle') {
+      hasil = i;
+    }
+  }
+  return hasil;
 }
 
 let haystack_1 = ['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false];

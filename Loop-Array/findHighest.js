@@ -4,8 +4,15 @@
 
 function findHighestInt(arr) {
   //your code here
-  
-}
+  for (let i = 0; i < arr.length; i++) {
+    for (let q = 0 ; q < arr.length; q++) {
+      if (arr[q + 1] > arr[q]) {
+        [arr[q + 1], arr[q]] = [arr[q], arr[q + 1]];
+      }
+    }
+  }
+  return arr[0];
+} // kayaknya mas zexo pas buat soal ini agak ngantuk, harusnya expected outputnya terbesar. Tapi, dibawah malah terkecil wkwkwk
 
 console.log(findHighestInt([78,56,232,12,8])); //8
 console.log(findHighestInt([78,56,232,12,18])); //12
