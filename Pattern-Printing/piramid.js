@@ -3,6 +3,16 @@
 function piramida(num) {
   let pattern = '';
   // code here
+  for (let i = 1; i <= num; i++) {
+    for (let q = 1; q < num + i; q++) {
+      if (q <= num - i ) {
+        pattern+=" ";
+      } else {
+        pattern+="*";
+      }
+    }
+    pattern+="\n";
+  }
   return pattern;
 }
 

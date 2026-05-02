@@ -5,6 +5,16 @@
 function polaX(num) {
   let pattern = '';
   // code here
+  for (let i = 1; i <= num; i++) {
+    for (let w = 1; w <= num; w++) {
+      if (i === w || i + w === num + 1) {
+        pattern += "*";
+      } else {
+        pattern += " ";
+      }
+    }
+    pattern+="\n";
+  }
   return pattern;
 }
 

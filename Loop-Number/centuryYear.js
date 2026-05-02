@@ -6,7 +6,11 @@
 
 function century(year) {
   // Finish this :)
-  return;
+  let hasil = 0;
+  for(let i = 0; i < year / 100; i+= 1) {
+    hasil += 1;
+  }
+  return hasil;
 }
 
 console.log(century(1705)); //18
