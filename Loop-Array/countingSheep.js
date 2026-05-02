@@ -4,6 +4,13 @@
 
 function countSheeps(sheep) {
   // TODO
+  let hasil = 0;
+  for( let i = 0; i < sheep.length; i++) {
+    if (sheep[i] === true) {
+      hasil += 1;
+    }
+  }
+  return hasil;
 }
 
 console.log(countSheeps([])) //0
